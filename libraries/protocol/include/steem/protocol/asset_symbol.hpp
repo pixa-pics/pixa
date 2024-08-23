@@ -33,23 +33,23 @@
 
 #ifdef IS_TEST_NET
 
-#define VESTS_SYMBOL_STR "VESTS"
-#define STEEM_SYMBOL_STR "TESTS"
-#define SBD_SYMBOL_STR   "TBD"
+#define VESTS_SYMBOL_STR "TPXP"
+#define STEEM_SYMBOL_STR "TPXC"
+#define SBD_SYMBOL_STR   "TPXS"
 
-#define VESTS_SYMBOL_U64  (uint64_t('V') | (uint64_t('E') << 8) | (uint64_t('S') << 16) | (uint64_t('T') << 24) | (uint64_t('S') << 32))
-#define STEEM_SYMBOL_U64  (uint64_t('T') | (uint64_t('E') << 8) | (uint64_t('S') << 16) | (uint64_t('T') << 24) | (uint64_t('S') << 32))
-#define SBD_SYMBOL_U64    (uint64_t('T') | (uint64_t('B') << 8) | (uint64_t('D') << 16))
+#define VESTS_SYMBOL_U64  (uint64_t('T') |uint64_t('P') | (uint64_t('X') << 16) | (uint64_t('P') << 24))
+#define STEEM_SYMBOL_U64  (uint64_t('T') | (uint64_t('P') << 8) | (uint64_t('X') << 16) | (uint64_t('C') << 24))
+#define SBD_SYMBOL_U64    (uint64_t('T') | (uint64_t('P') << 8) | (uint64_t('X') << 16)| (uint64_t('S') << 24))
 
 #else
 
-#define VESTS_SYMBOL_STR "VESTS"
-#define STEEM_SYMBOL_STR "STEEM"
-#define SBD_SYMBOL_STR   "SBD"
+#define VESTS_SYMBOL_STR "PXP"
+#define STEEM_SYMBOL_STR "PXC"
+#define SBD_SYMBOL_STR   "PXS"
 
-#define VESTS_SYMBOL_U64  (uint64_t('V') | (uint64_t('E') << 8) | (uint64_t('S') << 16) | (uint64_t('T') << 24) | (uint64_t('S') << 32))
-#define STEEM_SYMBOL_U64  (uint64_t('S') | (uint64_t('T') << 8) | (uint64_t('E') << 16) | (uint64_t('E') << 24) | (uint64_t('M') << 32))
-#define SBD_SYMBOL_U64    (uint64_t('S') | (uint64_t('B') << 8) | (uint64_t('D') << 16))
+#define VESTS_SYMBOL_U64  (uint64_t('P') | (uint64_t('X') << 8) | (uint64_t('P') << 16))
+#define STEEM_SYMBOL_U64  (uint64_t('P') | (uint64_t('X') << 8) | (uint64_t('C') << 16))
+#define SBD_SYMBOL_U64    (uint64_t('P') | (uint64_t('X') << 8) | (uint64_t('S') << 16))
 
 #endif
 
