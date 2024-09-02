@@ -47,7 +47,7 @@ void info()
 {
 #ifdef IS_TEST_NET
       std::cerr << "------------------------------------------------------\n\n";
-      std::cerr << "            STARTING TEST NETWORK\n\n";
+      std::cerr << "            STARTING PIXAGRAM TEST NETWORK\n\n";
       std::cerr << "------------------------------------------------------\n";
       auto initminer_private_key = steem::utilities::key_to_wif( STEEM_INIT_PRIVATE_KEY );
       std::cerr << "initminer public key: " << STEEM_INIT_PUBLIC_KEY_STR << "\n";
@@ -56,7 +56,7 @@ void info()
       std::cerr << "------------------------------------------------------\n";
 #else
       std::cerr << "------------------------------------------------------\n\n";
-      std::cerr << "            STARTING STEEM NETWORK\n\n";
+      std::cerr << "            STARTING PIXAGRAM NETWORK\n\n";
       std::cerr << "------------------------------------------------------\n";
       std::cerr << "initminer public key: " << STEEM_INIT_PUBLIC_KEY_STR << "\n";
       std::cerr << "chain id: " << std::string( STEEM_CHAIN_ID ) << "\n";
@@ -81,7 +81,7 @@ int main( int argc, char** argv )
       steem::plugins::register_plugins();
 
       appbase::app().set_version_string( version_string() );
-      appbase::app().set_app_name( "steemd" );
+      appbase::app().set_app_name( "pixagramd" );
 
       // These plugins are included in the default config
       appbase::app().set_default_plugins<
