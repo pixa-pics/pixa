@@ -33,13 +33,13 @@
 
 #ifdef IS_TEST_NET
 
-#define VESTS_SYMBOL_STR "TPXP"
-#define STEEM_SYMBOL_STR "TPXC"
-#define SBD_SYMBOL_STR   "TPXS"
+#define VESTS_SYMBOL_STR "PXPT"
+#define STEEM_SYMBOL_STR "PXCT"
+#define SBD_SYMBOL_STR   "PXST"
 
-#define VESTS_SYMBOL_U64  (uint64_t('T') |uint64_t('P') | (uint64_t('X') << 16) | (uint64_t('P') << 24))
-#define STEEM_SYMBOL_U64  (uint64_t('T') | (uint64_t('P') << 8) | (uint64_t('X') << 16) | (uint64_t('C') << 24))
-#define SBD_SYMBOL_U64    (uint64_t('T') | (uint64_t('P') << 8) | (uint64_t('X') << 16)| (uint64_t('S') << 24))
+#define VESTS_SYMBOL_U64  (uint64_t('P') | (uint64_t('X') << 8) | (uint64_t('P') << 16) | (uint64_t('T') << 24))
+#define STEEM_SYMBOL_U64  (uint64_t('P') | (uint64_t('X') << 8) | (uint64_t('C') << 16) | (uint64_t('T') << 24))
+#define SBD_SYMBOL_U64    (uint64_t('P') | (uint64_t('X') << 8) | (uint64_t('S') << 16) | (uint64_t('T') << 24))
 
 #else
 
@@ -53,9 +53,9 @@
 
 #endif
 
-#define VESTS_SYMBOL_SER  (uint64_t(6) | (VESTS_SYMBOL_U64 << 8)) ///< VESTS|VESTS with 6 digits of precision
-#define STEEM_SYMBOL_SER  (uint64_t(3) | (STEEM_SYMBOL_U64 << 8)) ///< STEEM|TESTS with 3 digits of precision
-#define SBD_SYMBOL_SER    (uint64_t(3) |   (SBD_SYMBOL_U64 << 8)) ///< SBD|TBD with 3 digits of precision
+#define VESTS_SYMBOL_SER  (uint64_t(6) | (VESTS_SYMBOL_U64 << 8)) ///< PXP|PXPT with 6 digits of precision
+#define STEEM_SYMBOL_SER  (uint64_t(3) | (STEEM_SYMBOL_U64 << 8)) ///< PXC|PXCT with 3 digits of precision
+#define SBD_SYMBOL_SER    (uint64_t(3) |   (SBD_SYMBOL_U64 << 8)) ///< PXS|PXST with 3 digits of precision
 
 #define STEEM_ASSET_MAX_DECIMALS 12
 

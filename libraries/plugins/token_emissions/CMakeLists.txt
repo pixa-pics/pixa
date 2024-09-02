@@ -11,7 +11,7 @@ target_include_directories( token_emissions_plugin
 
 if( CLANG_TIDY_EXE )
    set_target_properties(
-      transaction_status_plugin PROPERTIES
+      token_emissions_plugin PROPERTIES
       CXX_CLANG_TIDY "${DO_CLANG_TIDY}"
    )
 endif( CLANG_TIDY_EXE )
